@@ -26,36 +26,42 @@
             <a href="projects.html" id="projectsNavButton" class="navButton">Projects</a>
         </nav>
     </header>
-    <main>
-        <h3>Star Wars Quiz</h3>
-        <img id="projectImage" src="assets/images/starwarsquiz.JPG" alt="placeholder picture">
-        <p id="projectDescription">A short "buzzfeed" like quiz that tests your knowledge on the canon Star Wars universe. This was
-            co-developed with Terrence Harvey. It utilizes jquery and DOM manipulation to give feedback and show new
-            questions.</p>
-        <ul id="projectUl">
-            <li class="projectLi"><a href="https://thinkful-ei-firefly.github.io/quiz-app_andrew-terrence/">Live
-                    page</a><br /></li>
-            <li class="projectLi"><a href="https://github.com/thinkful-ei-firefly/quiz-app_andrew-terrence">Github
-                    Repo</a></li>
-        </ul>
-    </main>
-    <article class="projectNav">
-        <h4>&#8592</h4>
-        <img src="assets/images/starwarsquiz.JPG" alt="placeholder picture">
-        <img src="https://picsum.photos/75" alt="placeholder picture">
-        <img src="https://picsum.photos/75" alt="placeholder picture">
-        <img src="https://picsum.photos/75" alt="placeholder picture">
-        <h4>&#8594</h4>
-    </article>
-    <section class="leftofMain desktop">
-        <a href="skills.html">
+    <div id="arrowNavHolder">
+        <main>
+            <h3>Star Wars Quiz</h3>
+            <img id="projectImage" src="assets/images/starwarsquiz.JPG" alt="placeholder picture">
+            <p id="projectDescription">A short "buzzfeed" like quiz that tests your knowledge on the canon Star Wars
+                universe. This was
+                co-developed with Terrence Harvey. It utilizes jquery and DOM manipulation to give feedback and show new
+                questions.<br />
+                <a class="marginRight25px" href="https://github.com/thinkful-ei-firefly/quiz-app_andrew-terrence">Github
+                    Repo</a><span id="bulletSeperator">&#8226</span>
+                <a href="https://thinkful-ei-firefly.github.io/quiz-app_andrew-terrence/">Live
+                    page</a>
+            </p>
+
+        </main>
+        <section class="leftofMain desktop">
+            <a href="skills.html">
+                <h4>&#8592</h4>
+            </a>
+        </section>
+        <section class="rightofMain desktop">
+            <h4>&#8594</h4>
+        </section>
+    </div>
+    <div class="center">
+        <article class="projectNav">
             <h4>&#8592</h4>
-        </a>
-    </section>
-    <section class="rightofMain desktop">
-        <h4>&#8594</h4>
-    </section>
-    <footer>
+            <img src="assets/images/starwarsquiz.JPG" alt="placeholder picture">
+            <img src="https://picsum.photos/500" alt="placeholder picture">
+            <img src="https://picsum.photos/500" alt="placeholder picture">
+            <img src="https://picsum.photos/500" alt="placeholder picture">
+            <h4>&#8594</h4>
+        </article>
+    </div>
+    <div id="forcePortraitOrientation"><h1>Please view this page in Portrait mode.</h1></div>
+    <footer id="projectsFooter">
         <div class="footerLink" id="linkedIn"><a href="https://www.linkedin.com/in/andrew-j-017b4b9a/"><img class="icon"
                     id="linkedInIcon" src="assets/images/LI-In-Bug.png"
                     alt="https://www.linkedin.com/in/andrew-j-017b4b9a/"></a></div>
