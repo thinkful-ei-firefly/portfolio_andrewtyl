@@ -5,13 +5,13 @@ html, body {
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .footerLink > a {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .desktop {
@@ -35,23 +35,23 @@ header {
 #headerH1Holder > h1 {
     text-align: center;
     font-size: 5vw;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 header > h2 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     font-size: 3vw;
 }
 
 nav {
-    height: 40px;
+    height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .navButton {
@@ -59,6 +59,7 @@ nav {
     background-color: rgb(39, 39, 39);
     color: white;
     font-size: 3vw;
+    border: none;
 }
 .navButton:hover {
     cursor: pointer;
@@ -66,15 +67,9 @@ nav {
 
 h3 {
     font-family: 'Lucida Sans Regular';
-}
-
-#h3Bio {
     font-size: 5vw;
     margin-bottom: 10px;
-}
-
-#h3Skills {
-    font-size: 6vw;
+    margin-left: 10px;
 }
 
 li {
@@ -82,14 +77,26 @@ li {
     font-size: 3vw;
     line-height: 4vh;
     margin-bottom: 2vh;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right: 20px;
+    text-indent: -30px;
+    list-style-position: inside;
+}
+
+.projectLi {
+    font-size: 2.5vw;
+    line-height: normal;
+    margin-bottom: 10px;;
+    margin-right: 10px;
+    text-indent: 0px;
+    list-style: none;
+    text-align: right;
 }
 
 p {
     font-family: 'Lucida Sans Regular';
     font-size: 2vw;
-    text-indent: 45px;
+    text-indent: 15px;
     line-height: 3vh;
     margin-left: 20px;
     margin-right: 20px;
@@ -117,14 +124,26 @@ footer {
     padding: 10px;
 }
 
+#projectImage {
+    float: right;
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 
 /* Tablet */
-@media only screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
+
+    #andrewpicture {
+        width: 35%;
+    }
 
 }
 
 /* Desktop */
-@media only screen and (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .desktop {
         display: block;
     }
