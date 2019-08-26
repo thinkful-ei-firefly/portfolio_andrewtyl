@@ -69,7 +69,8 @@ h3 {
 }
 
 #h3Bio {
-    font-size: 2vw;
+    font-size: 5vw;
+    margin-bottom: 10px;
 }
 
 #h3Skills {
@@ -87,9 +88,9 @@ li {
 
 p {
     font-family: 'Lucida Sans Regular';
-    font-size: 1vw;
+    font-size: 2vw;
     text-indent: 45px;
-    line-height: 1vh;
+    line-height: 3vh;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -110,6 +111,10 @@ footer {
     bottom: 0;
     width: 100%;
     margin-bottom: 0px;
+}
+
+.footerLink {
+    padding: 10px;
 }
 
 
