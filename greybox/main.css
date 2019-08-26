@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
 .icon {
     width: 50px;
     height: 50px;
@@ -6,4 +12,119 @@
 .footerLink > a {
     width: 50px;
     height: 50px;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 124, 124);
+    font-family: 'Lucida Fax Regular';
+}
+
+#headerH1Holder {
+    width: 60%;
+    align-self: center;
+    border-bottom: 1px solid black;
+}
+
+#headerH1Holder > h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+
+header > h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3vw;
+}
+
+nav {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navButton {
+    width: 20%;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 3vw;
+}
+.navButton:hover {
+    cursor: pointer;
+}
+
+h3 {
+    font-family: 'Lucida Sans Regular';
+}
+
+#h3Bio {
+    font-size: 2vw;
+}
+
+#h3Skills {
+    font-size: 6vw;
+}
+
+li {
+    font-family: 'Lucida Sans Regular';
+    font-size: 3vw;
+    line-height: 4vh;
+    margin-bottom: 2vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p {
+    font-family: 'Lucida Sans Regular';
+    font-size: 1vw;
+    text-indent: 45px;
+    line-height: 1vh;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#andrewpicture {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    padding: 15px;
+}
+
+footer {
+    background-color: rgb(124, 124, 124);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1100px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
 }
