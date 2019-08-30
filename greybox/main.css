@@ -1,9 +1,311 @@
+#forcePortraitOrientation {
+    display: none;
+}
+
+html, body {
+    font-family: 'Lucida Fax Regular';
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#bulletSeperator {
+    font-size: 5vw;
+    position: relative;
+    top: 1vw;
+}
+
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .footerLink > a {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.desktop {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 124, 124);
+    font-family: 'Lucida Fax Regular';
+    height: 20.5vw;
+}
+
+#headerH1Holder {
+    width: 60%;
+    align-self: center;
+    border-bottom: 1px solid black;
+}
+
+#headerH1Holder > h1 {
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 2.5px;
+}
+
+header > h2 {
+    text-align: center;
+    margin-top: 2.5px;
+    margin-bottom: 5px;
+    font-size: 3vw;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.navButton {
+    height: 4vw;
+    width: 20%;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 3.5vw;
+    border: none;
+    text-align: center;
+    margin-top: -7.5px;
+    margin-bottom: auto;
+    text-decoration: none;
+}
+.navButton:hover {
+    cursor: pointer;
+}
+
+.navActive {
+    background-color: rgb(75, 75, 75);
+}
+
+h3 {
+    font-family: 'Lucida Sans Regular';
+    font-size: 5vw;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+li {
+    font-family: 'Lucida Sans Regular';
+    font-size: 5vw;
+    line-height: 8vw;
+    margin-left: 5px;
+    margin-right: 20px;
+    text-indent: -30px;
+    list-style-position: inside;
+    margin-bottom: 3vw;
+}
+
+p {
+    font-family: 'Lucida Sans Regular';
+    font-size: 4vw;
+    text-indent: 20px;
+    line-height: 4vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 100px;
+}
+
+#andrewpicture {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    padding: 15px;
+}
+
+footer {
+    background-color: rgb(124, 124, 124);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.footerLink {
+    padding: 10px;
+}
+
+#projectImage {
+    float: right;
+    width: 30%;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+
+.projectNav > img {
+    width: 15%;
+    height: 15%;
+    align-self: center;
+}
+
+.projectNav {
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+}
+
+h4 {
+    font-family: 'Lucida Fax Regular';
+    font-size: 60px;
+    line-height: 20px;
+}
+
+#projectUl {
+    clear: both;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#projectDescription {
+    padding-bottom: 0px;
+}
+
+#projectDescription::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+
+    #andrewpicture {
+        width: 35%;
+    }
+
+    .projectNav {
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 3.5vw;
+        line-height: 5vw;
+    }
+
+    header {
+        height: 19vw;
+    }
+
+    li {
+        font-size: 3.5vw;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1100px) {
+
+    .projectNav > img {
+        width: 10%;
+        height: 10%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .projectNav {
+        justify-content: center;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #headerH1Holder > h1 {
+        font-size: 2.5vw;
+        margin-top: 5px;
+    }
+
+    #headerH1Holder {
+        width: 30%;
+    }
+
+    header > h2 {
+        font-size: 1.5vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+        margin-left: 25px;
+    }
+
+    li {
+        font-size: 1.5vw;
+        margin-bottom: 2vw;
+        line-height: normal;
+    }
+
+    #andrewpicture {
+        width: 30%;
+    }
+
+    #arrowNavHolder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 75%;
+    }
+
+    .leftofMain {
+        order: 0;
+        align-self: center;
+        margin-right: 50px;
+        margin-left: 25px;
+    }
+
+    main {
+        order: 1;
+    }
+
+    .rightofMain {
+        order: 3;
+        align-self: center;
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+
+    #bulletSeperator {
+        font-size: 2vw;
+        top: .5vw;
+    }
+
+    p {
+        font-size: 1.5vw;
+        line-height: 3vw;
+        text-indent: 45px;
+    }
+
+    header {
+        height: 8vw;
+    }
+
+    .navButton {
+        height: 2vw;
+        font-size: 1.75vw;
+    }
+
+    #projectDescription {
+        padding-bottom: 100px;
+    }
+
 }
